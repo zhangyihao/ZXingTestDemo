@@ -1,0 +1,17 @@
+必须按步骤来哈
+
+1.将layout文件夹下的文件复制到你项目的layout目录下
+2.将raw文件夹复制到你res目录下
+3.将values文件夹下的文件复制到你项目的res/values目录下
+4.将core.jar复制到你项目的libs目录下
+5.将com文件夹复制到你的src目录下,修改一下R文件的引用(就是有些页面引用了R文件,包名要改成你的包名,如果你是用Eclipse 或者是myEclipse的话,有个快捷键 Ctrl + Shift + O 就可以快速帮你引用R文件了)
+6.到AndroidManifest.xml文件中,声明一个activity 例如:  <activity android:name="com.zxing.activity.CaptureActivity"/>
+7.在AndroidManifest.xml文件中增加以下权限
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+还有不明白的可以加我QQ.414638396
